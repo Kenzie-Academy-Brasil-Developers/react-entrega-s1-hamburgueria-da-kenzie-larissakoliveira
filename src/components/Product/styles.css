@@ -1,0 +1,70 @@
+
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 20px;
+}
+
+p{
+    font-size: 12px;
+}
+
+input{
+    border-radius: 5px;
+    height:20px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+button{
+    cursor: pointer;
+    background-color: navy;
+    color: oldlace;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.subtotal{
+    font-weight: bold;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+span{
+    font-weight: bold;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 80rem;
+    }
+
+    input{
+        margin-right: 10px;
+        width: 200px;
+    }
+
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+        
+}

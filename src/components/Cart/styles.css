@@ -1,0 +1,9 @@
+.cartTotal{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.eachProductCart{
+    margin-right: 25px;
+}
+
