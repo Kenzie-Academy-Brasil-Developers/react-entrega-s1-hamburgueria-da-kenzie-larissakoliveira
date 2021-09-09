@@ -1,11 +1,11 @@
 import Product from "../Product"
 
-const MenuContainer = ({products, handleClick, filteredProducts,currentSale})=> {
+const MenuContainer = ({products, handleClick, filteredProducts})=> {
     
     return(
         
-            <>
-             {filteredProducts.length > 0} ?
+            
+             filteredProducts.length > 0 ?
                 <ul>
                     {(filteredProducts.map((item, index)=>(<li key={index}><Product handleClick={handleClick} item={item}/></li>)))}              
                 </ul>
@@ -13,7 +13,7 @@ const MenuContainer = ({products, handleClick, filteredProducts,currentSale})=> 
                 <ul>
                     {(products.map((item, index)=>(<li key={index}><Product handleClick={handleClick} item={item}/></li>)))}              
                 </ul>
-            </>
+            
         
     )
 }
