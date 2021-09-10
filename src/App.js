@@ -29,12 +29,13 @@ function App() {
   }
 
   const handleClick = (productId) => {
-    const checkDuplicateItems = currentSale.includes(productId.id)
-
-    // {checkDuplicateItems}
-
-    setCurrentSale([...currentSale, products.find((item) => item.id === (productId))])
+    
+    const checkDuplicateItems = currentSale.some((item)=>item.id === productId)
+    
+    if(!checkDuplicateItems){
+    setCurrentSale([...currentSale, products.find((item) => item.id === productId)])
     setCartTotal(currentSale.length + 1)
+    }
   }
 
   return (
